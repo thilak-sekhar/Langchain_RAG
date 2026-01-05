@@ -7,11 +7,19 @@ __pycache__/
 *.pyd
 *.so
 
-# Virtual environments
+# ================================
+# Virtual Environments
+# ================================
 venv/
-.env/
-.env.*
 .venv/
+env/
+
+# ================================
+# Environment Variables (CRITICAL)
+# ================================
+.env
+.env.*
+*.env
 
 # ================================
 # IDE / Editor
@@ -39,15 +47,7 @@ logs/
 .streamlit/secrets.toml
 
 # ================================
-# Data (IMPORTANT)
-# ================================
-# Ignore raw or large datasets if needed
-# Uncomment if PDFs should NOT be tracked
-# data/pdf/
-
-# ================================
-# Model / Cache Artifacts
+# Cache / Runtime Artifacts
 # ================================
 .cache/
 .pinecone/
-.env
