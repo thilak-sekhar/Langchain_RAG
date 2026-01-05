@@ -88,6 +88,30 @@ data/pdf/langchain_deep_dive.pdf
 ````
 
 ---
+## 🖥️ Offline / Local LLM Setup (Ollama + Nomic + LLaMA)
+
+This project is designed to run **fully offline** after initial model setup, without relying on cloud-based LLM APIs.
+
+### 🔧 Components Used
+
+- **Ollama** – Local LLM runtime
+- **LLaMA-based model** – Local language model for generation
+- **nomic-embed-text** – Local embedding model for vectorization
+- **Pinecone** – Vector database (can be replaced with local stores if required)
+
+---
+
+## 🧠 How Offline Execution Works
+
+Once models are pulled locally, **no internet connection is required** for:
+- Query answering
+- Embedding generation
+- Retrieval-augmented generation
+- Streamlit UI interaction
+
+All inference runs on the local machine.
+
+
 
 ## 🚀 Getting Started
 
