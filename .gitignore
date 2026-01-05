@@ -1,0 +1,52 @@
+# ================================
+# Python
+# ================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+.env/
+.env.*
+.venv/
+
+# ================================
+# IDE / Editor
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ================================
+# OS
+# ================================
+.DS_Store
+Thumbs.db
+
+# ================================
+# Logs
+# ================================
+*.log
+logs/
+
+# ================================
+# Streamlit
+# ================================
+.streamlit/secrets.toml
+
+# ================================
+# Data (IMPORTANT)
+# ================================
+# Ignore raw or large datasets if needed
+# Uncomment if PDFs should NOT be tracked
+# data/pdf/
+
+# ================================
+# Model / Cache Artifacts
+# ================================
+.cache/
+.pinecone/
