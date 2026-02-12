@@ -88,8 +88,7 @@ LLM (Ollama)
 Generated Answer
 ↓
 RAGAS Evaluation
-   ├── Evaluator LLM
-   └── Embedding Model
+   ├── Evaluation LLM
 ↓
 Quantitative Quality Scores
 ```
