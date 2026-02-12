@@ -34,6 +34,9 @@ def cli_mode():
         for src in result.get("sources", []):
             print(src)
         print("-" * 50)
+        print("Evaluation Metrics:\n")
+        evaluation = result.get("evaluation", {})
+        print(evaluation)
 
 
 if __name__ == "__main__":

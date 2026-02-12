@@ -5,6 +5,7 @@ from app.llm.ollama_llm import get_llm
 from app.utils.citations import attribute_sentences
 from app.utils.logger import get_logger
 from app.utils.refusal import is_refusal
+from app.evaluation.evaluation import evaluate_response
 
 logger = get_logger(__name__)
 
@@ -52,11 +53,14 @@ def run_rag(query: str) -> dict:
     })
     logger.info("Compiled succesfully.")
 
+    evaluation_metrics = evaluate_response(query, answer, documents)
+
     return {
         "answer": answer,
         "citations": citations,
         "sources": sources,
-        "refused": False
+        "refused": False,
+        "evaluation": evaluation_metrics
     }
 
 if __name__ == "__main__":

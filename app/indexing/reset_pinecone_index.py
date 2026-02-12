@@ -1,8 +1,9 @@
 from pinecone import Pinecone, ServerlessSpec
-from app.config.settings import (
-    PINECONE_API_KEY,
-    PINECONE_INDEX_NAME,
-)
+import os
+import loadenv
+ 
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+PINECONE_INDEX_NAME = os.getenv("PINECONE_INDEX_NAME")
 
 PINECONE_CLOUD = "aws"
 PINECONE_REGION = "us-east-1"
